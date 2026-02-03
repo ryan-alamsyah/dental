@@ -1,6 +1,18 @@
 import CustomImage from "@/app/ui/CustomImage";
+import { useEffect, useState } from "react";
+
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Product = () => {
+
+  const controls = useAnimation();
+  const { ref, inView } = useInView({ triggerOnce: true });
+
+  useEffect((): void => {
+    if (inView) controls.start({ opacity: 1, y: 0 });
+  }, [inView]);
+ 
   return (
     <>
       <div>
@@ -25,11 +37,17 @@ const Product = () => {
             maksimal, napas jadi lebih segar!
           </p>
         </div>
-        <div className="card shadow-lg flex flex-col gap-2">
+        <motion.div
+        ref={ref}
+        initial={{opacity: 0, y: 150}}
+        animate={controls}
+        transition={{duration: 0.6}}
+        >
+           <div className="card shadow-lg flex flex-col gap-2">
           <CustomImage
             src="/pict5.png"
             alt="Tambal_gigi"
-            width={60}
+            width={50}
             height={60}
           />
           <h1 className="font-bold text-2xl">Tambal Gigi</h1>
@@ -38,6 +56,14 @@ const Product = () => {
             yang warnanya menyatu alami dengan gigi asli
           </p>
         </div>
+        </motion.div>
+       
+         <motion.div
+        ref={ref}
+        initial={{opacity: 0, y: 150}}
+        animate={controls}
+        transition={{duration: 1}}
+        >
         <div className="card shadow-lg flex flex-col gap-2">
           <CustomImage
             src="/pict6.png"
@@ -51,6 +77,7 @@ const Product = () => {
             jaringan gusi di sekitarnya.
           </p>
         </div>
+        </motion.div>
         <div className="card shadow-lg flex flex-col gap-2">
           <CustomImage
             src="/pict4.png"
@@ -72,7 +99,10 @@ const Product = () => {
             tampil maksimal di setiap momen
           </p>
         </div>
-        <div className="card shadow-lg flex flex-col gap-2">
+       
+     
+        <div className="card shadow-lg flex flex-col gap-2" >
+          
           <CustomImage src="/pict1.png" alt="Denture" width={65} height={65} />
           <h1 className="font-bold text-2xl">Denture</h1>
           <p>
@@ -80,6 +110,7 @@ const Product = () => {
             nyaman dan tersenyum tanpa ragu.
           </p>
         </div>
+        
       </div>
     </>
   );
