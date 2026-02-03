@@ -47,11 +47,11 @@ const MenuNavbar = () => {
 
 
         <div className={`
-  grid transition-all duration-500 ease-in-out bg-teal-100/90
-  ${menuOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}
+   transition-all duration-500 ease-in-out bg-teal-100/90
+  ${menuOpen ? "h-full opacity-100" : "grid-rows-[0fr] opacity-0 h-full"}
 `}>
-  <div className="overflow-hidden z-50">
-    <div className="flex flex-col justify-center items-center gap-8 h-96">
+  <div className=" z-50">
+    <div className="flex flex-col justify-center items-center gap-8 h-[100%]">
       <Link href="#home" className="text-sm  ">Home</Link>
       <Link href="#price" className="text-sm">Layanan</Link>
       <Link href="#reason" className="text-sm">Pasien</Link>

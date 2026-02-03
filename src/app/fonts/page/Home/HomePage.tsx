@@ -10,20 +10,18 @@ import { useInView } from "react-intersection-observer";
 const HeroSection = () => {
   const controls = useAnimation();
     const { ref, inView } = useInView({ triggerOnce: true });
-    const {refLeft, leftInView} = useInView({triggerOnce: true});
+
   
     useEffect((): void => {
       if (inView) controls.start({ opacity: 1, x: 0});
     }, [inView]);
-     useEffect((): void => {
-      if (leftInView) controls.start({ opacity: 1, x: 0});
-    }, [leftInView]);
+
   return (
     <>
       <div className="min-h-screen  md:grid grid-cols-2  duration-300 ease-in-out pt-20 md:pt-8">
          <motion.div
         ref={ref}
-        initial={{opacity: 0, x: -600,}}
+        initial={{opacity: 0, x: -200,}}
         animate={controls}
         transition={{duration: 0.6}}
         className="flex justify-center"
@@ -59,7 +57,7 @@ const HeroSection = () => {
           </div>
           <div className="flex flex-col gap-2 md:mb-8">
             <div className="flex items-center gap-2">
-              <CustomImage src="/ict1.png" alt="pict1" width={35} height={35} />
+              <CustomImage src="/pict1.png" alt="pict1" width={35} height={35} />
               <p className="text-slate-400 text-sm">
                 Gratis Konsultasi Pertama
               </p>
@@ -79,8 +77,8 @@ const HeroSection = () => {
         </div>
         </motion.div>
  <motion.div
-        ref={refLeft}
-        initial={{opacity: 0, x: 600,}}
+        ref={ref}
+        initial={{opacity: 0, x: 200,}}
         animate={controls}
         transition={{duration: 0.6}}
         className="flex justify-center"
