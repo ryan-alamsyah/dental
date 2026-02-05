@@ -17,8 +17,8 @@ const MenuNavbar = () => {
   };
   return (
     <>
-      <nav className=" fixed top-0 left-0 w-full">
-        <div className="h-14 w-full bg-teal-100  flex justify-between items-center md:px-20 px-4 z-50 ">
+      <nav className=" fixed w-full z-50 ">
+        <div className="h-14 w-full bg-teal-100  flex justify-between items-center md:px-20 px-4 ">
           <h1 className="text-2xl font-bold text-teal-500 ">Nafisha Dental</h1>
           <div className="md:flex gap-8 hidden">
             <Link

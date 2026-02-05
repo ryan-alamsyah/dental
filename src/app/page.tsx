@@ -6,6 +6,7 @@ import MenuNavbar from "./ui/navbar";
 import Product from "./fonts/page/Product/Product";
 import ScrollFloat from "@/components/ScrollFloat";
 import ReasonPage from "./fonts/page/Product/Reason/ReasonPage";
+import FooterPage from "./fonts/page/Footer/Footer";
 
 
 export default function Home() {
@@ -31,7 +32,7 @@ export default function Home() {
     <ReasonPage />
    </section>
     <section id="reason" className="min-h-screen">
-    <ReasonPage />
+    <FooterPage />
    </section>
      </div>
    </>
