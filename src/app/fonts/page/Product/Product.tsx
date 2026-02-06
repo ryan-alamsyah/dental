@@ -15,25 +15,22 @@ const Product = () => {
 
       <div className="px-4">
         <SplitText
-  text="Solusi kesehatan gigi keluarga Anda dengan pelayanan yang ramah,
+          text="Solusi kesehatan gigi keluarga Anda dengan pelayanan yang ramah,
           nyaman, dan transparan."
-  className=" flex flex-wrap gap-1 justify-center"
-  delay={150}
-  duration={0.6}
-  ease="bounce.out"
-  splitType="words"
-  from={{ opacity: 0, y: 40 }}
-  to={{ opacity: 1, y: 0 }}
-  threshold={0.1}
-  rootMargin="-100px"
-  textAlign="center"
-
- 
-/>
-       
+          className=" flex flex-wrap gap-1 justify-center"
+          delay={150}
+          duration={0.6}
+          ease="power3.out"
+          splitType="chars"
+          from={{ opacity: 0, y: 40 }}
+          to={{ opacity: 1, y: 0 }}
+          threshold={0.1}
+          rootMargin="-100px"
+          textAlign="center"
+        />
       </div>
 
-      <div className="flex flex-wrap gap-8 justify-center px-8 py-8">
+      <div className="flex flex-wrap gap-8 justify-center p-8  ">
         <motion.div
           initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
@@ -58,7 +55,7 @@ const Product = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6}} // Muncul saat 20% elemen terlihat
+          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
           transition={{ duration: 0.6 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">
@@ -78,7 +75,7 @@ const Product = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6}} // Muncul saat 20% elemen terlihat
+          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
           transition={{ duration: 0.6 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">
@@ -99,7 +96,7 @@ const Product = () => {
         <motion.div
           initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6}} // Muncul saat 20% elemen terlihat
+          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
           transition={{ duration: 0.6 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">

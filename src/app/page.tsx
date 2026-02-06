@@ -31,9 +31,9 @@ export default function Home() {
    <section id="reason" className="min-h-screen">
     <ReasonPage />
    </section>
-    <section id="reason" className="min-h-screen">
+    <footer id="footer">
     <FooterPage />
-   </section>
+   </footer>
      </div>
    </>
   )
