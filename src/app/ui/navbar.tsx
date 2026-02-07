@@ -27,7 +27,7 @@ const MenuNavbar = () => {
             >
               Home
             </Link>
-            <Link href="#price" className="text-sm">
+            <Link href="#product" className="text-sm">
               Layanan
             </Link>
             <Link href="#reason" className="text-sm">

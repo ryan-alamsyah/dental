@@ -18,8 +18,8 @@ const Product = () => {
           text="Solusi kesehatan gigi keluarga Anda dengan pelayanan yang ramah,
           nyaman, dan transparan."
           className=" flex flex-wrap gap-1 justify-center"
-          delay={150}
-          duration={0.6}
+          delay={40}
+          duration={0.5}
           ease="power3.out"
           splitType="chars"
           from={{ opacity: 0, y: 40 }}
@@ -32,10 +32,10 @@ const Product = () => {
 
       <div className="flex flex-wrap gap-8 justify-center p-8  ">
         <motion.div
-          initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
+          initial={{ opacity: 0, y: 50 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 1 }} // Muncul saat 20% elemen terlihat
+          transition={{ duration: 1.5 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">
             <CustomImage
@@ -53,10 +53,10 @@ const Product = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
+          initial={{ opacity: 0, y: 50 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 1 }} // Muncul saat 20% elemen terlihat
+          transition={{ duration: 1.5 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">
             <CustomImage
@@ -73,10 +73,10 @@ const Product = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
+          initial={{ opacity: 0, y: 50 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 1 }} // Muncul saat 20% elemen terlihat
+          transition={{ duration: 1.5 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">
             <CustomImage
@@ -94,10 +94,10 @@ const Product = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
+          initial={{ opacity: 0, y: 50 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 1 }} // Muncul saat 20% elemen terlihat
+          transition={{ duration: 1.5 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">
             <CustomImage
@@ -115,10 +115,10 @@ const Product = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
+          initial={{ opacity: 0, y: 50 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 1 }} // Muncul saat 20% elemen terlihat
+          transition={{ duration: 1.5 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">
             <CustomImage
@@ -136,10 +136,10 @@ const Product = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 30 }} // Mulai dari bawah
+          initial={{ opacity: 0, y: 50 }} // Mulai dari bawah
           whileInView={{ opacity: 1, y: 0 }} // Muncul saat masuk layar
-          viewport={{ once: true, amount: 0.6 }} // Muncul saat 20% elemen terlihat
-          transition={{ duration: 0.6 }}
+          viewport={{ once: true, amount: 1 }} // Muncul saat 20% elemen terlihat
+          transition={{ duration: 1.5 }}
         >
           <div className="card shadow-lg flex flex-col gap-2">
             <CustomImage
